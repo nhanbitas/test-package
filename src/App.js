@@ -1,9 +1,11 @@
+import Tooltip from "abctest03/dist/Tooltip";
 import "./App.css";
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "abctest03";
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "abctest03/dist/Accordion";
 
 function App() {
   return (
     <div className="App">
+      <Tooltip />
       <div
         style={{
           width: "100%",
