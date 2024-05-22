@@ -1,6 +1,7 @@
 import Tooltip from "abctest03/dist/Tooltip";
 import "./App.css";
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "abctest03/dist/Accordion";
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "abctest01-typescript";
+import { Button } from "antd";
 
 function App() {
   return (
@@ -15,15 +16,7 @@ function App() {
           alignItems: "center",
         }}
       >
-        <Accordion
-          style={{ width: "50%", margin: "50px" }}
-          className="AccordionRoot"
-          type="single"
-          collapsible
-          onValueChange={(value) => {
-            console.log(value);
-          }}
-        >
+        <Accordion style={{ width: "50%", margin: "50px" }} title="Accordion">
           <AccordionItem value="item-1">
             <AccordionTrigger>Is it accessible?</AccordionTrigger>
             <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
@@ -43,6 +36,10 @@ function App() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
+      </div>
+
+      <div className="App">
+        <Button type="primary">Button</Button>
       </div>
     </div>
   );
